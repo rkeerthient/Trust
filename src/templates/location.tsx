@@ -69,6 +69,7 @@ export const config: TemplateConfig = {
       "c_fPToLocation.mainPhone",
       "c_fPToLocation.description",
       "c_fPToLocation.hours",
+      "nmlsNumber",
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
@@ -164,6 +165,7 @@ const Location: Template<TemplateRenderProps> = ({
     c_background,
     headshot,
     c_fPToLocation,
+    nmlsNumber,
   } = document;
 
   return (
@@ -200,7 +202,7 @@ const Location: Template<TemplateRenderProps> = ({
                   className="text-2xl font-medium  mb-2"
                   style={{ color: "#7c6992" }}
                 >
-                  NMLSR #415261
+                  NMLSR #{nmlsNumber}
                 </div>
               </div>
               <div className="flex flex-col text-xl !mb-16">
