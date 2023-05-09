@@ -243,7 +243,7 @@ const Location: Template<TemplateRenderProps> = ({
             >
               Background
             </div>
-            <div>{c_background}</div>
+            <RTF>{c_background}</RTF>
           </div>
           <div className="flex flex-col mt-4">
             <div
@@ -300,7 +300,7 @@ const Location: Template<TemplateRenderProps> = ({
                             />
                           </Disclosure.Button>
                           <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500 flex flex-col">
-                            {item.area_Desciption}
+                            <RTF>{item.area_Desciption}</RTF>
                           </Disclosure.Panel>
                         </>
                       )}
