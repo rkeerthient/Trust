@@ -165,7 +165,6 @@ const Location: Template<TemplateRenderProps> = ({
     headshot,
     c_fPToLocation,
   } = document;
-  console.log(JSON.stringify(c_areasOfFocus));
 
   return (
     <>
