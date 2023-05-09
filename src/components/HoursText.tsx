@@ -87,20 +87,20 @@ const HoursText = ({ document }: any) => {
         <div
           className={
             res.status.includes("Open")
-              ? "text-2xl text-gray-600 Hero-hoursToday storeOpen flex gap-1 items-center w-max "
-              : "text-2xl text-gray-600 Hero-hoursToday storeClosed flex gap-1 items-center w-max "
+              ? " text-gray-600 Hero-hoursToday storeOpen flex gap-1 items-center w-max "
+              : " text-gray-600 Hero-hoursToday storeClosed flex gap-1 items-center w-max "
           }
         >
           <p className="">
-            {res.status === "Open now"
+            {res.status.toLowerCase() === "open now"
               ? "Open Now - "
-              : res.status === "Closed"
+              : res.status.toLowerCase() === "closed"
               ? "Closed  - "
-              : res.status === "Closed perm"
+              : res.status.toLowerCase() === "closed perm"
               ? "Closed"
               : ""}
           </p>
-          {res.status !== "Closed perm" && res.text}
+          {res.status.toLowerCase() !== "closed perm" && res.text}
         </div>
       </div>
     </div>

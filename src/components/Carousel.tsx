@@ -51,9 +51,9 @@ const Carousel = (props: any) => {
           <div key={index} className="p-4 border flex flex-row">
             <div className="textClass flex-col flex justify-between leading-6 font-normal">
               <div className=" text-left text-sm ">
-                {item.c_locationName && (
+                {item.name && (
                   <div className="mt-4 font-semibold ">
-                    {item.c_locationName.toUpperCase()}
+                    {item.name.toUpperCase()}
                   </div>
                 )}
                 <div className="mt-4">
@@ -80,13 +80,13 @@ const Carousel = (props: any) => {
                 <div className="mt-4">
                   {<HoursText document={item}></HoursText>}
                 </div>
-                <div className="mt-4">
+                {/* <div className="mt-4">
                   <Cta
                     buttonText={"View Store Details"}
                     url={""}
                     style="secondary-cta"
                   ></Cta>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
